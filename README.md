@@ -29,10 +29,7 @@ Dataset used:
 🔗 TMDB 5000 Movie Dataset
 
 Add dataset link here:
-
-```text
 https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
-```
 
 ---
 
@@ -91,7 +88,7 @@ Movie-Recommendation-System/
 Clone repository:
 
 ```bash
-git clone https://github.com/your-username/Movie-Recommendation-System.git
+git clone https://github.com/vanshikasharma-maker/Movie-Recommendation-System.git
 ```
 
 Go to project folder:
@@ -128,12 +125,17 @@ Output:
 - Superman Returns
 - Man of Steel
 - The Dark Knight Rises
+- Aliens
+- Moonraker
+- Lifeforce
+- Spaceballs
 
 ---
 
 # 📸 Screenshots
 
-(Add screenshots of your web app here)
+
+
 
 ---
 
@@ -147,8 +149,7 @@ Output:
 
 ---
 
-# 👩‍💻 Author
+# Author
 
 Vanshika Sharma
 
-Machine Learning Enthusiast 🚀
