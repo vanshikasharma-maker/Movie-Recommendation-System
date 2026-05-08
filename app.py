@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
+from sklearn.metrics.pairwise import cosine_similarity
 
 # PAGE CONFIG
 
@@ -17,12 +18,13 @@ st.set_page_config(
 movies_dict = pickle.load(open('movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+vectors = pickle.load(open('vectors.pkl', 'rb'))
 
 
 # RECOMMEND FUNCTION
 
 def recommend(movie):
+    similarity = cosine_similarity(vectors)
 
     movie = movie.lower()
 
