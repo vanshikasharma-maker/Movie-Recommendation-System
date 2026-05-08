@@ -17,7 +17,7 @@ The recommendation engine is based on:
 
 # 🚀 Live Demo
 
-🔗 Add your deployed Streamlit app link here
+https://vanshikasharma-maker-movie-recommendation-system-app-ebojx5.streamlit.app/
 
 
 ---
@@ -76,10 +76,22 @@ Movie-Recommendation-System/
 ├── movie-recommendation.ipynb
 ├── app.py
 ├── movie_dict.pkl
-├── similarity.pkl
+├── vectors.pkl
 ├── requirements.txt
 └── README.md
 ```
+
+# ⚡ Optimization Note
+
+Instead of storing the full similarity matrix (`similarity.pkl`), the project stores sparse vectors (`vectors.pkl`) to reduce file size and improve deployment compatibility.
+
+Cosine similarity is computed dynamically during runtime using:
+
+```python
+cosine_similarity(vectors)
+```
+
+This approach significantly reduces storage requirements while maintaining similar recommendation performance.
 
 ---
 
@@ -125,19 +137,9 @@ Output:
 - Superman Returns
 - Man of Steel
 - The Dark Knight Rises
-- Aliens
-- Moonraker
-- Lifeforce
-- Spaceballs
 
 ---
 
-# 📸 Screenshots
-
-
-
-
----
 
 # 🌐 Future Improvements
 
